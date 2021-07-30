@@ -42,16 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CaffeinBeverage.cs" />
-    <Compile Include="CaffeinBeverageWithHook.cs" />
-    <Compile Include="Chapter8Tests.cs" />
-    <Compile Include="Coffee.cs" />
-    <Compile Include="CoffeeWithHook.cs" />
-    <Compile Include="Duck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy.cs" />
-    <Compile Include="Tea.cs" />
+    <Compile Include="StrategyAlwayBuy.cs" />
+    <Compile Include="StrategyAlwaySell.cs" />
+    <Compile Include="StrategyNonSign.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

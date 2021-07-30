@@ -10,8 +10,22 @@ namespace DesignPattern_TemplatePractice
     {
         static void Main(string[] args)
         {
-            Chapter8Tests.Test1();
-            Chapter8Tests.Test2();
+            Console.WriteLine("Test Buy Sign Strategy");
+            StrategyAlwayBuy strategyAlwayBuy = new StrategyAlwayBuy();
+            strategyAlwayBuy.execute();
+            Console.WriteLine("---");
+
+            Console.WriteLine("Test Sell Sign Strategy");
+            StrategyAlwaySell strategyAlwaySell = new StrategyAlwaySell();
+            strategyAlwaySell.execute();
+            Console.WriteLine("---");
+
+            Console.WriteLine("Test Non-Sign Strategy");
+            StrategyNonSign strategyNonSign = new StrategyNonSign();
+            strategyNonSign.execute();
+            Console.WriteLine("---");
+
+            Console.Read();
         }
     }
 }
